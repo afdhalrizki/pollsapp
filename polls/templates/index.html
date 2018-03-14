@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for question in latest_question %}
+    <a href="/polls/{{quetion.id}}"><b>{{question.question_text}}</b></a>
+{% endfor %}
+</body>
+</html>
